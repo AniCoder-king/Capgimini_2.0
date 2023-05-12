@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+#header_main {
+	background-color: rgb(245, 245, 245);
+	height: 120px;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	font-family: 'Nunito', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+}
+
+.headertop {
+	height: 3rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	width: 100%;
+	padding: 0px 50px;
+}
+
+.headertop>a {
+	text-decoration: none;
+	padding: 10px 20px;
+}
+
+.btn-link-contact {
+	color: black;
+}
+
+.headerbottom {
+	height: 3rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.headerbottom>a {
+	text-decoration: none;
+	color: black;
+	padding: 5px 24px;
+}
+
+.search-container {
+	float: right;
+	border: 1px solid black;
+	padding: 5px 10px;
+	margin: 5px;
+	position: relative;
+	right: -324px;
+}
+
+.lang-icon {
+	padding: 13px 0px;
+	margin-left: -15px;
+}
+
+#search-box {
+	background-color: rgb(180, 187, 246);
+	outline: none;
+	border: none;
+}
+
+.underline {
+	display: inline-block;
+	position: relative;
+	color: #0087ca;
+}
+
+.underline:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #0087ca;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.underline:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+	text-emphasis-color: #07a3f1;
+}
+
+#navbar_items {
+	float: left;
+}
+
+/* #navbar_items > a, */
+.underline {
+	display: inline-block;
+	color: rgb(35, 33, 33);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+}
+
+.headerrow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.search {
+	width: 30vw;
+}
+
+@media screen and (max-width: 1140px) {
+	.search {
+		display: none;
+	}
+}
